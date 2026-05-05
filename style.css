@@ -94,15 +94,17 @@ body {
   pointer-events: none;
 }
 .mega-fg-inner {
-  width: 100vw; height: 100vh; /* Starts taking whole screen */
+  width: 80vh; height: 100vh; /* Portrait ratio to fit a person properly */
+  max-width: 100vw;
   overflow: hidden;
   /* Will shrink to portrait width via GSAP */
   will-change: width, height, transform, border-radius;
 }
 .fg-img {
   width: 100%; height: 100%;
-  object-fit: cover; object-position: center 20%;
-  /* Will counteract internal shrink logic */
+  object-fit: cover; 
+  object-position: center top;
+  /* Ensures the upper body/face is prioritized in the crop */
 }
 
 .scroll-down-hint {

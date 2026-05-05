@@ -58,7 +58,7 @@ introTl.to(counter, {
 .set(".mega-bg-img", { opacity: 1 })
 .fromTo(".mega-bg-img", { scale: 1.5 }, { scale: 1, duration: 2, ease: "power3.out" }, "-=0.5")
 // Let the FG photo scale down slightly from full screen just at the end of load
-.fromTo(".mega-fg-inner", { width: "100vw", height: "100vh", borderRadius: "0px" }, { width: "100vw", height: "100vh", borderRadius: "0px", duration: 1, ease: "power4.out" }, "-=1")
+.fromTo(".mega-fg-inner", { width: "80vh", height: "100vh", borderRadius: "0px" }, { width: "80vh", height: "100vh", borderRadius: "0px", duration: 1, ease: "power4.out" }, "-=1")
 .to(".mega-text", { opacity: 1, y: -20, duration: 1 }, "-=1");
 
 
